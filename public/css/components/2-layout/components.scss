@@ -1,0 +1,147 @@
+h2 {
+  font-family: $kaushan;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 52px;
+  text-transform: capitalize;
+  color: $white;
+}
+h4 {
+  font-family: $kaushan;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 38px;
+  color: $white;
+}
+h6 {
+  font-family: $kaushan;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: rgba($color: $white, $alpha: 0.5);
+}
+.button {
+  @include transition;
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.white {
+    font-family: $koulen;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 38px;
+    letter-spacing: 0.03em;
+    color: $black;
+    padding: 3px 27px;
+    background: $white;
+    border-radius: 9px;
+  }
+  &.bordered {
+    padding: 8px 48px;
+    background: $black;
+    border: 0.75px solid $white;
+    border-radius: 9px;
+    font-family: $koulen;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    &:hover {
+      border: 2px solid $white;
+    }
+    color: $white;
+  }
+}
+.wrapper {
+  overflow: hidden;
+}
+.btnUniq {
+  padding: 30px;
+  box-sizing: border-box;
+  max-width: 366px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  font-family: "Space Grotesk";
+  font-weight: 700;
+  border-radius: 50px;
+  font-size: 22px;
+  line-height: 32px;
+  color: #ffffff;
+  background: #f95516;
+  &__arrow {
+    width: 24px;
+    height: 24px;
+    display: block;
+    box-sizing: border-box;
+
+    position: relative;
+    margin-left: 10px;
+    span {
+      position: absolute;
+      top: 0;
+      box-sizing: border-box;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #fff;
+      transition: 0.2s linear;
+      border-radius: 50%;
+      transform-origin: 100%;
+    }
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: calc(50% - 1px);
+      transition: 0.2s linear;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      content: "";
+      width: 4px;
+      height: 4px;
+      border-bottom: 2px solid #fff;
+      z-index: 2;
+      border-right: 2px solid #fff;
+    }
+    &::after {
+      height: 2px;
+      background: #fff;
+      transition: 0.2s linear;
+      position: absolute;
+      content: "";
+      left: -20%;
+      width: 0;
+      opacity: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &:hover {
+    .btnUniq {
+      &__arrow {
+        &::after {
+          width: calc(110% - 2px);
+          border-radius: 0 1px 1px 0;
+          opacity: 1;
+          left: -10%;
+        }
+        &::before {
+          width: 6px;
+          height: 6px;
+          left: calc(50% + 6px);
+        }
+        span {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

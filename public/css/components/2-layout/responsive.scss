@@ -1,0 +1,90 @@
+// 1650px
+@include xxxxlg-xxxxxlg {
+  // index start
+  @include about-xxxxlg-xxxxxlg;
+  // index end
+}
+// 1460px
+@include xxxlg-xxxxlg {
+  // index start
+  @include disco-xxxlg-xxxxlg;
+  @include about-xxxlg-xxxxlg;
+  // index end
+}
+// 1340px
+@include xxlg-xxxlg {
+  // base start
+  @include nav-xxlg-xxxlg;
+  .button {
+    &.white {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 5px 16px;
+    }
+    &.bordered {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 8px 24px;
+    }
+  }
+  h4 {
+    font-size: 22px;
+
+    line-height: 30px;
+  }
+  h6 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  // base end
+  // index start
+  @include disco-xxlg-xxxlg;
+
+  // index end
+}
+// 1140px
+@include xlg-xxlg {
+  // index start
+  @include disco-xlg-xxlg;
+  // index end
+}
+// 1024px
+@include lg-xlg {
+  // index start
+  @include about-lg-xlg;
+  // index end
+}
+// 840px
+@include md-lg {
+  // base start
+  .auto__container {
+    padding: 0 20px;
+  }
+  @include nav-md-lg;
+  @include footer-md-lg;
+  // base end
+  // index start
+  @include about-md-lg;
+
+  // index end
+}
+// 700px
+@include sm-md {
+  // index start
+  @include disco-sm-md;
+  // index end
+}
+// 540px
+@include xsm-sm {
+  // base start
+  @include footer-xsm-sm;
+  // base end
+
+  // index start
+  @include disco-xsm-sm;
+  // index end
+}

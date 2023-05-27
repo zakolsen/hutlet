@@ -1,0 +1,39 @@
+.header {
+  background: $black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 10;
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 105px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &.sticky {
+    position: fixed;
+    animation: 0.2s linear sticky;
+    top: 0;
+    left: 0;
+  }
+}
+@keyframes sticky {
+  0% {
+    top: -60px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
