@@ -20,7 +20,7 @@ export default function About() {
             >
               Alternative Singer/Songwriter jabroni artist Hutlet, has released
               his newest album "Grand Line" the Summer of 2023. With an avid
-              following online on live-streaming sites such as{" "}
+              following online on live-streaming sites such as{""}
               <a target="_blank" href="https://www.twitch.tv/tommydime">
               Twitch.tv
               </a>{" "}
