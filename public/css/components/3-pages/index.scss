@@ -355,6 +355,9 @@
           &:hover {
             color: $white;
           }
+          &.uniq {
+            margin-left: 0;
+          }
         }
       }
     }

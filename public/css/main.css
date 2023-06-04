@@ -777,6 +777,9 @@ h6 {
 .about__inner-content p a:hover {
   color: #fff;
 }
+.about__inner-content p a.uniq {
+  margin-left: 0;
+}
 .about__inner-image {
   margin-right: -180px;
   width: calc(50% + 180px);
