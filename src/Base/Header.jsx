@@ -57,7 +57,7 @@ export default function Header() {
                 About
               </a>
               <a
-                href="https://open.spotify.com/artist/57iFG9OVRZEFG1NV5vN9N6?si=ZUtfUCAuRumD-b0v7ln_iA"
+                href="https://linktr.ee/tommydime?utm_source=linktree_admin_share"
                 target="_blank"
                 className="button white"
               >

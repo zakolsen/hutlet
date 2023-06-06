@@ -27,7 +27,7 @@ export default function Intro() {
       </a> */}
       <a
         target="_blank"
-        href="https://open.spotify.com/artist/57iFG9OVRZEFG1NV5vN9N6?si=ZUtfUCAuRumD-b0v7ln_iA"
+        href="https://linktr.ee/tommydime?utm_source=linktree_admin_share"
         className="button bordered  wow animate__fadeInUp"
         data-wow-duration=".8s"
         data-wow-delay=".4s"
