@@ -22,7 +22,7 @@ export default function About() {
               his newest album "Grand Line" the Summer of 2023. With an avid
               following online on live-streaming sites such as
               <a className="uniq" target="_blank" href="https://www.twitch.tv/tommydime">
-                Twitch.tv
+              Twitch.tv
               </a>{" "}
               the past few years, the news of new music coming out is something
               he is wanting to share with not only new and old listeners, but
@@ -41,7 +41,7 @@ export default function About() {
               data-wow-delay=".6s"
             >
               Contact:
-              <a href="mailto:thomashutlet@gmail.com">thomashutlet@gmail.com</a>
+              <a href="mailto:hutlett@gmail.com">hutlett@gmail.com</a>
             </p>
           </div>
           <div
